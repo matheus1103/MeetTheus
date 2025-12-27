@@ -8,6 +8,8 @@ on:
 jobs:
   send-email:
     runs-on: ubuntu-latest
+    environment: env
+
     steps:
     - name: Send greeting
       uses: dawidd6/action-send-mail@v3
