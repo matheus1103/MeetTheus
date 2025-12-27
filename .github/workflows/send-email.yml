@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_PASS }}
         subject: "Novo commit no repositório ${{ github.repository }}"
-        to: matheusfrancisco1103@gmail.com
+        to: ${{ secrets.EMAIL_RECEIVER }}
         from: GitHub Bot <${{ secrets.EMAIL_USER }}>
         body: |
           Olá,
